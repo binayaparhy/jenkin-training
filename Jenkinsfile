@@ -36,7 +36,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                echo 'Message is ${env.SIZE}'
+		echo "SIZE = ${env.SIZE}"
             }
         }
         stage('Test') {
