@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment{
-	MESSAGE = 'BINAYA PARHY'
+	SIZE = 10
          
     }
 
@@ -36,7 +36,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                echo 'Message is ${env.MESSAGE}'
+                echo 'Message is ${env.SIZE}'
             }
         }
         stage('Test') {
