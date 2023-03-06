@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment{
-	SIZE = 10
+	SIZE = 20
          
     }
 
