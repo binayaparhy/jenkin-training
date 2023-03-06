@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    environment{
+	MESSAGE = 'BINAYA PARHY'
+         
+    }
 
     // this section configures Jenkins options
     options {
@@ -32,6 +36,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                echo 'Message is ${env.MESSAGE}'
             }
         }
         stage('Test') {
